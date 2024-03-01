@@ -89,7 +89,8 @@
       <p class="text-center">- Me, 11 years old</p>
     </div>
 
-    <div class="container-md">
+    <div class="container-md mb-1">
+      <h2 class="text-left">About Me</h2>
       <p>
         &ensp;To me, engineering and invention is synonymous with art, in that
         all involve the creative process. As such, I seek solutions for any
@@ -112,6 +113,107 @@
         non-professional basis.
       </p>
     </div>
+
+    <div class="container-md">
+      <h2 class="text-left">My Projects</h2>
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="card m-3" style="max-width: 540px">
+          <img
+            src="./assets/images/Portfolio/foosball.png"
+            class="img-fluid rounded-start rounded-end"
+            alt="Foosball game"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gimme Foosball</h5>
+            <h6 class="card-subtitle">2012</h6>
+            <p class="card-text">
+              I created this game when I was 12 years old to emulate the
+              tabletop soccer game Foosball. The game used Java for all
+              functionality including 2D graphics, sound, and a computerized
+              opponent. The website used PHP and HTML and supported user logins
+              and a Paypal integration so that users could purchase the
+              "premium" version of the game.
+            </p>
+          </div>
+        </div>
+        <div class="card m-3" style="max-width: 540px">
+          <img
+            src="./assets/images/Portfolio/pace.png"
+            class="img-fluid rounded-start rounded-end"
+            alt="Williams Pace Calculator"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Williams Pace Calculator</h5>
+            <h6 class="card-subtitle">2019</h6>
+            <p class="card-text">
+              My running coach needed a mobile app that could be used by coaches
+              and runners to calculate their split times for various running
+              distances based on their race performance. I was hired to develop
+              this app for Android from the ground up and publish the app on the
+              Google Play store using his design and specifications. The app was
+              built using Java for Android and XML for the user interface
+              layout.
+            </p>
+            <a
+              href="https://www.williams-pace-calculator.com/"
+              class="btn btn-primary"
+              >Project website</a
+            >
+          </div>
+        </div>
+        <div class="card m-3" style="max-width: 540px">
+          <img
+            src="./assets/images/Portfolio/kb4yg.png"
+            class="img-fluid rounded-start rounded-end"
+            alt="Know Before You Go"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Know Before You Go</h5>
+            <h6 class="card-subtitle">2021-2022</h6>
+            <p class="card-text">
+              I worked with a team of eight OSU students to build a full-stack
+              application to inform Corvallis, OR area trail users of trailhead
+              capacity. With this project my team strove to improve community
+              access to nature and reduce overcrowding of fragile nature areas.
+              I developed the middleware for this project using AWS Lambda
+              functions to create API endpoints for updating and accessing
+              trailhead data as well as a NoSQL database for storing this data.
+            </p>
+          </div>
+        </div>
+        <div class="card m-3" style="max-width: 540px">
+          <img
+            src="./assets/images/Portfolio/scrollnt.png"
+            class="img-fluid rounded-start rounded-end"
+            alt="Scrollnt"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Scrollnt</h5>
+            <h6 class="card-subtitle">2023</h6>
+            <p class="card-text">
+              During my undergraduate program, I performed a research study on
+              engagement with social media platforms. In this study,
+              participants (all OSU students) were asked to complete a study
+              task while being shown a simulated social media feed and simulated
+              popup notifications. To assist in data collection, I developed a
+              React frontend and Node.JS backend to display the study materials
+              and social media feed. In addition, this application recorded
+              mouse movement data and stored the data in an Azure Cosmos DB for
+              scientific analysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      id="topBtn"
+      type="button"
+      class="btn btn-primary position-sticky bottom-0 d-none"
+      onclick="topFunction()"
+      title="Go to top"
+    >
+      Return to top
+    </button>
   </body>
 </html>
 
@@ -122,6 +224,7 @@
   crossorigin="anonymous"
 />
 
+<script src="./js/index.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
