@@ -1,13 +1,13 @@
 let topButton = document.getElementById("topBtn");
-window.onscroll = function () {
-  scrollFunction();
-};
+
+addEventListener("scroll", (e) => scrollFunction());
 
 function scrollFunction() {
+  console.log("Scroll event fired");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    // topButton.classList.remove("d-none");
   } else {
-    mybutton.style.display = "none";
+    topButton.classList.add("d-none");
   }
 }
 
